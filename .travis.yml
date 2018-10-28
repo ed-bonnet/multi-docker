@@ -16,7 +16,7 @@ after_success:
 # Log into the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # Take those images and push them to github
-  - docker push edbonnet/multi-client 
   - docker push edbonnet/multi-nginx 
   - docker push edbonnet/multi-server 
   - docker push edbonnet/multi-worker
+  - docker push edbonnet/multi-client 
